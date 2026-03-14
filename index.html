@@ -42,6 +42,13 @@
             color: var(--black);
             line-height: 1.6;
             overflow-x: hidden;
+            width: 100%;
+            max-width: 100vw;
+        }
+
+        * {
+            max-width: 100%;
+            box-sizing: border-box;
         }
 
         h1, h2, h3, h4, h5, h6 {
@@ -299,7 +306,7 @@
 
         @media (max-width: 480px) {
             .hero-content {
-                padding: 0 16px;
+                padding: 0 12px;
             }
         }
 
@@ -473,12 +480,15 @@
         /* Section Styles */
         section {
             padding: 120px 0;
+            overflow-x: hidden;
         }
 
         .section-container {
             max-width: 1600px;
             margin: 0 auto;
             padding: 0 60px;
+            width: 100%;
+            overflow-x: hidden;
         }
 
         .section-header {
@@ -1707,14 +1717,39 @@
                 padding: 8px 20px;
                 font-size: 0.8rem;
             }
+            /* Fix overflow issues */
+            .brand-card {
+                overflow: hidden;
+            }
+            .product-item {
+                overflow: hidden;
+            }
+            .leader-card {
+                overflow: hidden;
+            }
+            .instagram-card {
+                overflow: hidden;
+            }
+            .timeline-content h4,
+            .timeline-content p {
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+                hyphens: auto;
+            }
+            .brand-description,
+            .section-description {
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+                hyphens: auto;
+            }
         }
 
         @media (max-width: 480px) {
             .section-container {
-                padding: 0 16px;
+                padding: 0 12px;
             }
             .nav-container {
-                padding: 12px 16px;
+                padding: 12px 12px;
             }
             section {
                 padding: 40px 0;
@@ -1743,6 +1778,41 @@
             }
             .stats-container {
                 gap: 24px;
+            }
+            /* Additional overflow fixes for small mobile */
+            .hero-title {
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+            }
+            .hero-description {
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+            }
+            .brand-card {
+                overflow: hidden;
+            }
+            .product-item {
+                overflow: hidden;
+            }
+            .leader-card {
+                overflow: hidden;
+            }
+            .instagram-card {
+                overflow: hidden;
+            }
+            .instagram-header {
+                padding: 14px 16px;
+            }
+            .instagram-card-footer {
+                padding: 14px 16px;
+            }
+            .instagram-stats {
+                gap: 12px;
+                flex-wrap: wrap;
+            }
+            .instagram-link {
+                padding: 6px 16px;
+                font-size: 0.75rem;
             }
         }
     </style>
