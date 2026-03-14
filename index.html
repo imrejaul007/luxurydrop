@@ -291,6 +291,18 @@
             width: 100%;
         }
 
+        @media (max-width: 768px) {
+            .hero-content {
+                padding: 0 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content {
+                padding: 0 16px;
+            }
+        }
+
         .hero-badge {
             display: inline-flex;
             align-items: center;
@@ -911,6 +923,8 @@
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 40px;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         .leader-card {
@@ -1250,6 +1264,9 @@
             .brand-logos-container {
                 gap: 60px;
             }
+            .leadership-grid {
+                max-width: 700px;
+            }
         }
 
         @media (max-width: 992px) {
@@ -1301,44 +1318,236 @@
 
         @media (max-width: 768px) {
             .section-container {
-                padding: 0 30px;
+                padding: 0 20px;
             }
             .nav-container {
-                padding: 16px 30px;
+                padding: 16px 20px;
             }
             .top-bar {
                 display: none;
             }
             section {
-                padding: 80px 0;
+                padding: 50px 0;
             }
-            .about-features {
-                grid-template-columns: 1fr;
+            .section-header {
+                margin-bottom: 40px;
             }
-            .leadership-grid {
-                grid-template-columns: 1fr;
+            .hero {
+                min-height: auto;
+                padding: 100px 0 60px;
             }
-            .footer-container {
-                grid-template-columns: 1fr;
-                padding: 0 30px;
-            }
-            .contact-form {
-                padding: 40px 24px;
-            }
-            .form-row {
-                grid-template-columns: 1fr;
-            }
-            .section-title {
-                font-size: 2rem;
+            .hero-badge {
+                margin-bottom: 20px;
+                font-size: 0.65rem;
             }
             .hero-title {
-                font-size: 2.5rem;
+                font-size: 2rem;
+            }
+            .hero-description {
+                font-size: 1rem;
+                margin-bottom: 30px;
             }
             .hero-buttons {
                 flex-direction: column;
+                gap: 12px;
+            }
+            .btn {
+                padding: 16px 32px;
+                width: 100%;
+                text-align: center;
+            }
+            .stats-strip {
+                padding: 40px 0;
             }
             .stats-container {
                 grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            .stat-number {
+                font-size: 2.5rem;
+            }
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .about-image img {
+                height: 350px;
+            }
+            .about-features {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .about-feature {
+                padding: 20px;
+            }
+            .about-feature-icon {
+                width: 40px;
+                height: 40px;
+            }
+            .about-feature-icon svg {
+                width: 20px;
+                height: 20px;
+            }
+            .brand-card-content {
+                padding: 40px 24px 32px;
+            }
+            .brand-card-image {
+                height: 200px;
+            }
+            .brand-number {
+                font-size: 4rem;
+                top: -50px;
+                right: 20px;
+            }
+            .brand-logo {
+                margin-bottom: 16px;
+            }
+            .brand-logo img {
+                max-height: 40px;
+            }
+            .brand-title {
+                font-size: 1.5rem;
+            }
+            .products-grid {
+                gap: 20px;
+            }
+            .product-item {
+                margin-bottom: 0;
+            }
+            .product-image {
+                height: 180px;
+            }
+            .product-info {
+                padding: 16px;
+            }
+            .product-column-header {
+                padding-bottom: 16px;
+            }
+            .leadership-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            .leadership-grid {
+                max-width: 400px;
+                margin: 0 auto;
+            }
+            .leader-image {
+                margin-bottom: 16px;
+            }
+            .timeline-container {
+                padding-left: 30px;
+            }
+            .timeline-line {
+                left: 10px;
+            }
+            .timeline-dot {
+                left: 10px;
+            }
+            .timeline-item {
+                padding: 30px 0;
+                gap: 20px;
+            }
+            .timeline-year {
+                font-size: 2rem;
+            }
+            .timeline-content h4 {
+                font-size: 1.25rem;
+            }
+            .timeline-content p {
+                font-size: 0.9rem;
+            }
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .contact-form {
+                padding: 30px 20px;
+            }
+            .contact-info h3 {
+                font-size: 2rem;
+                margin-bottom: 20px;
+            }
+            .contact-info p {
+                font-size: 1rem;
+                margin-bottom: 30px;
+            }
+            .contact-details {
+                gap: 24px;
+            }
+            .form-group {
+                margin-bottom: 20px;
+            }
+            .form-group input,
+            .form-group textarea {
+                padding: 14px 16px;
+                font-size: 0.95rem;
+            }
+            .form-group label {
+                margin-bottom: 10px;
+                font-size: 0.85rem;
+            }
+            footer {
+                padding: 60px 0 30px;
+            }
+            .footer-container {
+                grid-template-columns: 1fr;
+                padding: 0 20px;
+                gap: 40px;
+            }
+            .footer-brand p {
+                font-size: 0.85rem;
+            }
+            .footer-bottom {
+                padding: 30px 20px 0;
+                font-size: 0.75rem;
+            }
+            .section-title {
+                font-size: 1.75rem;
+                margin-bottom: 16px;
+            }
+            .section-description {
+                font-size: 1rem;
+            }
+            .section-label {
+                font-size: 0.7rem;
+                margin-bottom: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-container {
+                padding: 0 16px;
+            }
+            .nav-container {
+                padding: 12px 16px;
+            }
+            section {
+                padding: 40px 0;
+            }
+            .section-header {
+                margin-bottom: 32px;
+            }
+            .hero {
+                padding: 80px 0 50px;
+            }
+            .hero-title {
+                font-size: 1.75rem;
+                line-height: 1.2;
+            }
+            .brand-card-content {
+                padding: 30px 20px 24px;
+            }
+            .brand-title {
+                font-size: 1.35rem;
+            }
+            .brand-description {
+                font-size: 0.9rem;
+            }
+            .stats-strip {
+                padding: 30px 0;
+            }
+            .stats-container {
+                gap: 24px;
             }
         }
     </style>
