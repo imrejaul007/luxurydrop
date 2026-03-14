@@ -276,7 +276,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('https://luxuryoudh.com/wp-content/uploads/2024/10/43c48b_c5336bba7def4348b1efefc8839b5403mv2.jpg') center/cover;
+            background: url('https://www.luxuryoudh.com/cdn/shop/files/Website_Banner2_d280c32e-e01c-4e77-af6e-c5857b2ea563.jpg?v=1748620198') center/cover;
             opacity: 0.3;
         }
 
@@ -1123,144 +1123,62 @@
             background: var(--gray-50);
         }
 
-        .instagram-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-        }
-
-        .instagram-card {
+        .brand-instagram-section {
             background: var(--white);
-            border-radius: 16px;
+            border-radius: 20px;
             overflow: hidden;
-            transition: all 0.4s ease;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            margin-bottom: 40px;
+            transition: all 0.4s ease;
         }
 
-        .instagram-card:hover {
-            transform: translateY(-8px);
+        .brand-instagram-section:hover {
+            transform: translateY(-5px);
             box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
         }
 
-        .instagram-header {
+        .brand-instagram-header {
             display: flex;
             align-items: center;
-            padding: 20px 24px;
+            padding: 24px 30px;
             border-bottom: 1px solid var(--gray-100);
-            gap: 14px;
-        }
-
-        .instagram-avatar {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 2px solid var(--gold);
-        }
-
-        .instagram-info {
-            flex: 1;
-        }
-
-        .instagram-username {
-            font-family: 'Inter', sans-serif;
-            font-weight: 600;
-            font-size: 0.95rem;
-            color: var(--black);
-            margin-bottom: 2px;
-        }
-
-        .instagram-brand {
-            font-size: 0.8rem;
-            color: var(--gray-500);
-        }
-
-        .instagram-follow {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            color: var(--gold);
-            font-size: 0.75rem;
-            font-weight: 600;
-        }
-
-        .instagram-follow svg {
-            width: 18px;
-            height: 18px;
-        }
-
-        .instagram-preview {
-            position: relative;
-            background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-            aspect-ratio: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
             gap: 16px;
         }
 
-        .instagram-preview img {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            opacity: 0.7;
+        .brand-instagram-logo {
+            width: 56px;
+            height: 56px;
+            object-fit: contain;
+            border-radius: 12px;
+            border: 2px solid var(--gray-200);
+            padding: 8px;
+            background: var(--gray-50);
         }
 
-        .instagram-preview-content {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-            color: var(--white);
+        .brand-instagram-info {
+            flex: 1;
         }
 
-        .instagram-icon {
-            width: 48px;
-            height: 48px;
-            fill: var(--white);
-            margin-bottom: 8px;
+        .brand-instagram-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--black);
+            margin-bottom: 4px;
         }
 
-        .instagram-preview-text {
-            font-size: 0.85rem;
-            font-weight: 500;
-            opacity: 0.95;
+        .brand-instagram-handle {
+            font-size: 0.9rem;
+            color: var(--gold);
+            font-weight: 600;
         }
 
-        .instagram-card-footer {
-            padding: 20px 24px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .instagram-stats {
-            display: flex;
-            gap: 20px;
-        }
-
-        .instagram-stat {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            font-size: 0.85rem;
-            color: var(--gray-600);
-        }
-
-        .instagram-stat svg {
-            width: 18px;
-            height: 18px;
-            stroke: var(--gold);
-        }
-
-        .instagram-link {
+        .brand-instagram-follow-btn {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            padding: 10px 24px;
-            background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
             color: var(--white);
             text-decoration: none;
             font-size: 0.85rem;
@@ -1269,15 +1187,90 @@
             transition: all 0.3s ease;
         }
 
-        .instagram-link:hover {
+        .brand-instagram-follow-btn:hover {
             transform: scale(1.05);
-            box-shadow: 0 4px 20px rgba(220, 39, 67, 0.4);
+            box-shadow: 0 4px 15px rgba(220, 38, 66, 0.3);
         }
 
-        .instagram-link svg {
-            width: 18px;
-            height: 18px;
-            fill: var(--white);
+        .brand-instagram-follow-btn svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .brand-instagram-posts {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 12px;
+            padding: 24px 30px;
+            background: var(--gray-50);
+        }
+
+        .instagram-post {
+            display: block;
+            aspect-ratio: 1;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .instagram-post:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .instagram-post-image {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .instagram-post-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .brand-instagram-footer {
+            padding: 20px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid var(--gray-100);
+        }
+
+        .brand-instagram-stats {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .brand-instagram-stats .stat-value {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--black);
+        }
+
+        .brand-instagram-stats .stat-label {
+            font-size: 0.9rem;
+            color: var(--gray-500);
+            font-weight: 500;
+        }
+
+        .brand-instagram-link {
+            color: var(--gold);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .brand-instagram-link:hover {
+            color: var(--gold-dark);
         }
 
         /* Footer */
@@ -1727,7 +1720,7 @@
             .leader-card {
                 overflow: hidden;
             }
-            .instagram-card {
+            .brand-instagram-section {
                 overflow: hidden;
             }
             .timeline-content h4,
@@ -1735,6 +1728,54 @@
                 word-wrap: break-word;
                 overflow-wrap: break-word;
                 hyphens: auto;
+            }
+            /* Instagram Section Responsive */
+            @media (max-width: 1200px) {
+                .brand-instagram-posts {
+                    grid-template-columns: repeat(4, 1fr);
+                }
+            }
+            @media (max-width: 992px) {
+                .brand-instagram-posts {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+            @media (max-width: 768px) {
+                .brand-instagram-posts {
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 8px;
+                    padding: 16px 20px;
+                }
+                .brand-instagram-header {
+                    padding: 16px 20px;
+                }
+                .brand-instagram-logo {
+                    width: 48px;
+                    height: 48px;
+                }
+                .brand-instagram-title {
+                    font-size: 1.25rem;
+                }
+                .brand-instagram-footer {
+                    padding: 16px 20px;
+                }
+            }
+            @media (max-width: 480px) {
+                .brand-instagram-posts {
+                    grid-template-columns: 1fr;
+                    padding: 12px 16px;
+                    gap: 8px;
+                }
+                .brand-instagram-header {
+                    flex-wrap: wrap;
+                    gap: 12px;
+                }
+                .brand-instagram-info {
+                    min-width: 100%;
+                }
+                .brand-instagram-title {
+                    font-size: 1.1rem;
+                }
             }
             .brand-description,
             .section-description {
@@ -1900,11 +1941,11 @@
         <div class="brand-logos-strip">
             <span class="brand-logos-label">Our Premium Brands</span>
             <div class="brand-logos-container">
-                <a href="https://thickfiber.ae/" target="_blank">
-                    <img src="https://thickfiber.ae/wp-content/uploads/2020/03/favico.png" alt="Thick Fiber">
+                <a href="https://www.thickfiber.ae/" target="_blank">
+                    <img src="https://www.thickfiber.ae/cdn/shop/files/logo.png?v=1751033932" alt="Thick Fiber">
                 </a>
-                <a href="https://luxuryoudh.com/" target="_blank">
-                    <img src="https://luxuryoudh.com/wp-content/uploads/2024/10/luxury-oud-logo-1_edited_edited.png" alt="Luxury Oudh">
+                <a href="https://www.luxuryoudh.com/" target="_blank">
+                    <img src="https://www.luxuryoudh.com/cdn/shop/files/luxury-oud-logo-1_edited_edited_png.webp?v=1745846451" alt="Luxury Oudh">
                 </a>
                 <a href="https://www.perfumy.ae/" target="_blank">
                     <img src="https://www.perfumy.ae/images/LOGO-THICK-STROKE-01.png" alt="Perfumy">
@@ -1945,7 +1986,7 @@
             </div>
             <div class="about-grid">
                 <div class="about-image">
-                    <img src="https://luxuryoudh.com/wp-content/uploads/2024/10/43c48b_c5336bba7def4348b1efefc8839b5403mv2.jpg" alt="Company">
+                    <img src="https://www.luxuryoudh.com/cdn/shop/files/Website_Banner2_d280c32e-e01c-4e77-af6e-c5857b2ea563.jpg?v=1748620198" alt="Company">
                 </div>
                 <div class="about-content">
                     <h3>A Visionary Approach to Luxury</h3>
@@ -2016,18 +2057,18 @@
                 <!-- Thick Fiber -->
                 <div class="brand-card">
                     <div class="brand-card-image" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); display: flex; align-items: center; justify-content: center;">
-                        <img src="https://thickfiber.ae/wp-content/uploads/2020/03/favico.png" alt="Thick Fiber" style="width: 120px; opacity: 0.9;">
+                        <img src="https://www.thickfiber.ae/cdn/shop/files/logo.png?v=1751033932" alt="Thick Fiber" style="width: 120px; opacity: 0.9;">
                         <div class="brand-card-overlay"></div>
                     </div>
                     <div class="brand-card-content">
                         <span class="brand-number">01</span>
                         <div class="brand-logo">
-                            <img src="https://thickfiber.ae/wp-content/uploads/2020/03/favico.png" alt="Thick Fiber">
+                            <img src="https://www.thickfiber.ae/cdn/shop/files/logo.png?v=1751033932" alt="Thick Fiber">
                         </div>
                         <h3 class="brand-title">Thick Fiber</h3>
                         <p class="brand-category">Hair Care Solutions</p>
                         <p class="brand-description">Revolutionary hair building fibers that instantly create appearance of thicker, fuller hair for those seeking natural-looking results. Now operating across USA, UK, Canada, India, Australia, and Saudi Arabia.</p>
-                        <a href="https://thickfiber.ae/" target="_blank" class="brand-link">
+                        <a href="https://www.thickfiber.ae/" target="_blank" class="brand-link">
                             Visit Website
                             <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -2039,18 +2080,18 @@
                 <!-- Luxury Oudh -->
                 <div class="brand-card">
                     <div class="brand-card-image">
-                        <img src="https://luxuryoudh.com/wp-content/uploads/2024/10/oudh-1024x683.jpg" alt="Luxury Oudh Products">
+                        <img src="https://www.luxuryoudh.com/cdn/shop/files/Banner_Image.jpg?v=1745860191" alt="Luxury Oudh Products">
                         <div class="brand-card-overlay"></div>
                     </div>
                     <div class="brand-card-content">
                         <span class="brand-number">02</span>
                         <div class="brand-logo">
-                            <img src="https://luxuryoudh.com/wp-content/uploads/2024/10/luxury-oud-logo-1_edited_edited.png" alt="Luxury Oudh">
+                            <img src="https://www.luxuryoudh.com/cdn/shop/files/luxury-oud-logo-1_edited_edited_png.webp?v=1745846451" alt="Luxury Oudh">
                         </div>
                         <h3 class="brand-title">Luxury Oudh</h3>
                         <p class="brand-category">Premium Oudh Fragrances</p>
                         <p class="brand-description">Experience the finest Oudh chips, oils, and fragrances sourced from most renowned regions, crafted for true connoisseurs.</p>
-                        <a href="https://luxuryoudh.com/" target="_blank" class="brand-link">
+                        <a href="https://www.luxuryoudh.com/" target="_blank" class="brand-link">
                             Visit Website
                             <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -2062,7 +2103,7 @@
                 <!-- Perfumy -->
                 <div class="brand-card">
                     <div class="brand-card-image">
-                        <img src="https://luxuryoudh.com/wp-content/uploads/2024/10/perfume-1024x683.jpg" alt="Perfumy Products">
+                        <img src="https://www.perfumy.ae/assets/images/product-image/KJ9zojeXN6.webp" alt="Perfumy Products">
                         <div class="brand-card-overlay"></div>
                     </div>
                     <div class="brand-card-content">
@@ -2097,12 +2138,12 @@
                 <!-- Thick Fiber Products -->
                 <div class="product-column">
                     <div class="product-column-header">
-                        <img src="https://thickfiber.ae/wp-content/uploads/2020/03/favico.png" alt="Thick Fiber" class="product-column-logo">
+                        <img src="https://www.thickfiber.ae/cdn/shop/files/logo.png?v=1751033932" alt="Thick Fiber" class="product-column-logo">
                         <span class="product-column-title">Thick Fiber</span>
                     </div>
                     <div class="product-item">
                         <div class="product-image">
-                            <img src="https://m.media-amazon.com/images/I/61E45j6x7NL._AC_SX500_SY500_QL70_.jpg" alt="Hair Building Fibers">
+                            <img src="https://www.m.media-amazon.com/images/I/61E45j6x7NL._AC_SX500_SY500_QL70_.jpg" alt="Hair Building Fibers">
                         </div>
                         <div class="product-info">
                             <h4 class="product-name">Hair Building Fibers</h4>
@@ -2111,7 +2152,7 @@
                     </div>
                     <div class="product-item">
                         <div class="product-image">
-                            <img src="https://m.media-amazon.com/images/I/61f3C3Dd5hL._AC_SX500_SY500_QL70_.jpg" alt="Root Touch Up Powder">
+                            <img src="https://www.m.media-amazon.com/images/I/61f3C3Dd5hL._AC_SX500_SY500_QL70_.jpg" alt="Root Touch Up Powder">
                         </div>
                         <div class="product-info">
                             <h4 class="product-name">Root Touch Up Powder</h4>
@@ -2120,7 +2161,7 @@
                     </div>
                     <div class="product-item">
                         <div class="product-image">
-                            <img src="https://m.media-amazon.com/images/I/51kMrnpq1aL._AC_SX500_SY500_QL70_.jpg" alt="Spray Applicator">
+                            <img src="https://www.m.media-amazon.com/images/I/51kMrnpq1aL._AC_SX500_SY500_QL70_.jpg" alt="Spray Applicator">
                         </div>
                         <div class="product-info">
                             <h4 class="product-name">Spray Applicator</h4>
@@ -2132,12 +2173,12 @@
                 <!-- Luxury Oudh Products -->
                 <div class="product-column">
                     <div class="product-column-header">
-                        <img src="https://luxuryoudh.com/wp-content/uploads/2024/10/luxury-oud-logo-1_edited_edited.png" alt="Luxury Oudh" class="product-column-logo">
+                        <img src="https://www.luxuryoudh.com/cdn/shop/files/luxury-oud-logo-1_edited_edited_png.webp?v=1745846451" alt="Luxury Oudh" class="product-column-logo">
                         <span class="product-column-title">Luxury Oudh</span>
                     </div>
                     <div class="product-item">
                         <div class="product-image">
-                            <img src="https://luxuryoudh.com/wp-content/uploads/2024/10/Filipini-TS.jpg" alt="Filipini Triple Super">
+                            <img src="https://www.luxuryoudh.com/cdn/shop/files/FilipiniTS3.jpg?v=1747324783" alt="Filipini Triple Super">
                         </div>
                         <div class="product-info">
                             <h4 class="product-name">Filipini Triple Super</h4>
@@ -2146,7 +2187,7 @@
                     </div>
                     <div class="product-item">
                         <div class="product-image">
-                            <img src="https://luxuryoudh.com/wp-content/uploads/2024/10/Malaysian-DS.jpg" alt="Malaysian Double Super">
+                            <img src="https://www.luxuryoudh.com/cdn/shop/files/SabahDS2.jpg?v=1748006941" alt="Malaysian Double Super">
                         </div>
                         <div class="product-info">
                             <h4 class="product-name">Malaysian Double Super</h4>
@@ -2155,7 +2196,7 @@
                     </div>
                     <div class="product-item">
                         <div class="product-image">
-                            <img src="https://luxuryoudh.com/wp-content/uploads/2024/10/oils-1024x683.jpg" alt="Oudh Oils Collection">
+                            <img src="https://www.luxuryoudh.com/cdn/shop/files/DSC00151_fb22de31-74e0-44a6-847c-fee341400aeb.jpg?v=1747484458" alt="Oudh Oils Collection">
                         </div>
                         <div class="product-info">
                             <h4 class="product-name">Oudh Oils Collection</h4>
@@ -2210,176 +2251,168 @@
                 <h2 class="section-title">Connect on Instagram</h2>
                 <p class="section-description">Stay updated with our latest products, offers, and behind-the-scenes content.</p>
             </div>
-            <div class="instagram-grid">
-                <!-- Thick Fiber Instagram -->
-                <div class="instagram-card">
-                    <div class="instagram-header">
-                        <img src="https://thickfiber.ae/wp-content/uploads/2020/03/favico.png" alt="Thick Fiber" class="instagram-avatar" style="object-fit: contain; padding: 8px; background: #1a1a2e;">
-                        <div class="instagram-info">
-                            <div class="instagram-username">@thick.fiber</div>
-                            <div class="instagram-brand">Thick Fiber</div>
-                        </div>
-                        <div class="instagram-follow">
-                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+            <!-- Thick Fiber Instagram Section -->
+            <div class="brand-instagram-section">
+                <div class="brand-instagram-header">
+                    <img src="https://www.thickfiber.ae/cdn/shop/files/logo.png?v=1751033932" alt="Thick Fiber" class="brand-instagram-logo">
+                    <div class="brand-instagram-info">
+                        <h3 class="brand-instagram-title">Thick Fiber</h3>
+                        <p class="brand-instagram-handle">@thick.fiber</p>
+                        <a href="https://www.instagram.com/thick.fiber/" target="_blank" class="brand-instagram-follow-btn">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
                                 <circle cx="8.5" cy="7" r="4"/>
                                 <line x1="20" y1="8" x2="20" y2="14"/>
                                 <line x1="23" y1="11" x2="17" y2="11"/>
                             </svg>
                             Follow
-                        </div>
-                    </div>
-                    <a href="https://www.instagram.com/thick.fiber/" target="_blank" class="instagram-preview">
-                        <img src="https://thickfiber.ae/wp-content/uploads/2020/03/favico.png" alt="Thick Fiber Instagram" style="opacity: 0.2; object-fit: contain; background: #1a1a2e;">
-                        <div class="instagram-preview-content">
-                            <svg class="instagram-icon" viewBox="0 0 24 24">
-                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="white" stroke-width="2"/>
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="white" stroke-width="2"/>
-                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="white" stroke-width="2"/>
-                            </svg>
-                            <div class="instagram-preview-text">View Latest Posts</div>
-                        </div>
-                    </a>
-                    <div class="instagram-card-footer">
-                        <div class="instagram-stats">
-                            <div class="instagram-stat">
-                                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-                                </svg>
-                                2.5K+
-                            </div>
-                            <div class="instagram-stat">
-                                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                                    <circle cx="8.5" cy="8.5" r="1.5"/>
-                                    <polyline points="21 15 16 10 5 21"/>
-                                </svg>
-                                150+
-                            </div>
-                        </div>
-                        <a href="https://www.instagram.com/thick.fiber/" target="_blank" class="instagram-link">
-                            View Profile
-                            <svg viewBox="0 0 24 24">
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                                <polyline points="15 3 21 3 21 9"/>
-                                <line x1="10" y1="14" x2="21" y2="3"/>
-                            </svg>
                         </a>
                     </div>
                 </div>
-
-                <!-- Luxury Oudh Instagram -->
-                <div class="instagram-card">
-                    <div class="instagram-header">
-                        <img src="https://luxuryoudh.com/wp-content/uploads/2024/10/luxury-oud-logo-1_edited_edited.png" alt="Luxury Oudh" class="instagram-avatar" style="object-fit: contain; padding: 8px; background: #1a1a2e;">
-                        <div class="instagram-info">
-                            <div class="instagram-username">@luxury_oudh</div>
-                            <div class="instagram-brand">Luxury Oudh</div>
+                <div class="brand-instagram-posts">
+                    <a href="https://www.instagram.com/thick.fiber/" target="_blank" class="instagram-post">
+                        <div class="instagram-post-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center;">
+                            <svg viewBox="0 0 24 24" width="40" height="40" fill="white">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M16 8l-2.5-2.5-3 3c0-2.5 2.5-2.5 5 0 5 2.5V20H8V5l-2.5 2.5L2 10v8l5.5 5.5H16z"/>
+                            </svg>
                         </div>
-                        <div class="instagram-follow">
-                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    </a>
+                    <a href="https://www.instagram.com/thick.fiber/" target="_blank" class="instagram-post">
+                        <div class="instagram-post-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center;">
+                            <svg viewBox="0 0 24 24" width="40" height="40" fill="white">
+                                <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="8.5" cy="8.5" r="1.5"/>
+                                <polyline points="21 15 16 10 5 21"/>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/thick.fiber/" target="_blank" class="instagram-post">
+                        <div class="instagram-post-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; align-items: center; justify-content: center;">
+                            <svg viewBox="0 0 24 24" width="40" height="40" fill="white">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/thick.fiber/" target="_blank" class="instagram-post">
+                        <div class="instagram-post-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); display: flex; align-items: center; justify-content: center;">
+                            <svg viewBox="0 0 24 24" width="40" height="40" fill="white">
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/thick.fiber/" target="_blank" class="instagram-post">
+                        <div class="instagram-post-image" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%); display: flex; align-items: center; justify-content: center;">
+                            <svg viewBox="0 0 24 24" width="40" height="40" fill="white">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="brand-instagram-footer">
+                    <div class="brand-instagram-stats">
+                        <span class="stat-value">2.5K+</span>
+                        <span class="stat-label">Followers</span>
+                    </div>
+                    <a href="https://www.instagram.com/thick.fiber/" target="_blank" class="brand-instagram-link">View All Posts →</a>
+                </div>
+            </div>
+
+            <!-- Luxury Oudh Instagram Section -->
+            <div class="brand-instagram-section">
+                <div class="brand-instagram-header">
+                    <img src="https://www.luxuryoudh.com/cdn/shop/files/luxury-oud-logo-1_edited_edited_png.webp?v=1745846451" alt="Luxury Oudh" class="brand-instagram-logo">
+                    <div class="brand-instagram-info">
+                        <h3 class="brand-instagram-title">Luxury Oudh</h3>
+                        <p class="brand-instagram-handle">@luxury_oudh</p>
+                        <a href="https://www.instagram.com/luxury_oudh/" target="_blank" class="brand-instagram-follow-btn">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
                                 <circle cx="8.5" cy="7" r="4"/>
                                 <line x1="20" y1="8" x2="20" y2="14"/>
                                 <line x1="23" y1="11" x2="17" y2="11"/>
                             </svg>
                             Follow
-                        </div>
-                    </div>
-                    <a href="https://www.instagram.com/luxury_oudh/" target="_blank" class="instagram-preview">
-                        <img src="https://luxuryoudh.com/wp-content/uploads/2024/10/oudh-1024x683.jpg" alt="Luxury Oudh Instagram">
-                        <div class="instagram-preview-content">
-                            <svg class="instagram-icon" viewBox="0 0 24 24">
-                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="white" stroke-width="2"/>
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="white" stroke-width="2"/>
-                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="white" stroke-width="2"/>
-                            </svg>
-                            <div class="instagram-preview-text">View Latest Posts</div>
-                        </div>
-                    </a>
-                    <div class="instagram-card-footer">
-                        <div class="instagram-stats">
-                            <div class="instagram-stat">
-                                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-                                </svg>
-                                5K+
-                            </div>
-                            <div class="instagram-stat">
-                                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                                    <circle cx="8.5" cy="8.5" r="1.5"/>
-                                    <polyline points="21 15 16 10 5 21"/>
-                                </svg>
-                                200+
-                            </div>
-                        </div>
-                        <a href="https://www.instagram.com/luxury_oudh/" target="_blank" class="instagram-link">
-                            View Profile
-                            <svg viewBox="0 0 24 24">
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                                <polyline points="15 3 21 3 21 9"/>
-                                <line x1="10" y1="14" x2="21" y2="3"/>
-                            </svg>
                         </a>
                     </div>
                 </div>
+                <div class="brand-instagram-posts">
+                    <a href="https://www.instagram.com/luxury_oudh/" target="_blank" class="instagram-post">
+                        <img src="https://www.luxuryoudh.com/cdn/shop/files/02_86862c48-57c4-4e31-aa3d-b29ebac24414_200x.jpg?v=1748346335" alt="Oud Product" class="instagram-post-img">
+                    </a>
+                    <a href="https://www.instagram.com/luxury_oudh/" target="_blank" class="instagram-post">
+                        <img src="https://www.luxuryoudh.com/cdn/shop/files/19.2_200x.jpg?v=1756745692" alt="Oud Product" class="instagram-post-img">
+                    </a>
+                    <a href="https://www.instagram.com/luxury_oudh/" target="_blank" class="instagram-post">
+                        <img src="https://www.luxuryoudh.com/cdn/shop/files/SilaniDS1_200x.jpg?v=1747327261" alt="Oud Product" class="instagram-post-img">
+                    </a>
+                    <a href="https://www.instagram.com/luxury_oudh/" target="_blank" class="instagram-post">
+                        <img src="https://www.luxuryoudh.com/cdn/shop/files/ZuraDS4_200x.jpg?v=1748006846" alt="Oud Product" class="instagram-post-img">
+                    </a>
+                    <a href="https://www.instagram.com/luxury_oudh/" target="_blank" class="instagram-post">
+                        <img src="https://www.luxuryoudh.com/cdn/shop/files/FilipiniTS3_200x.jpg?v=1747324783" alt="Oud Product" class="instagram-post-img">
+                    </a>
+                </div>
+                <div class="brand-instagram-footer">
+                    <div class="brand-instagram-stats">
+                        <span class="stat-value">5K+</span>
+                        <span class="stat-label">Followers</span>
+                    </div>
+                    <a href="https://www.instagram.com/luxury_oudh/" target="_blank" class="brand-instagram-link">View All Posts →</a>
+                </div>
+            </div>
 
-                <!-- Perfumy Instagram -->
-                <div class="instagram-card">
-                    <div class="instagram-header">
-                        <img src="https://www.perfumy.ae/images/LOGO-THICK-STROKE-01.png" alt="Perfumy" class="instagram-avatar" style="object-fit: contain; padding: 8px; background: #1a1a2e;">
-                        <div class="instagram-info">
-                            <div class="instagram-username">@perfumy.ae</div>
-                            <div class="instagram-brand">Perfumy</div>
-                        </div>
-                        <div class="instagram-follow">
-                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <!-- Perfumy Instagram Section -->
+            <div class="brand-instagram-section">
+                <div class="brand-instagram-header">
+                    <img src="https://www.perfumy.ae/images/LOGO-THICK-STROKE-01.png" alt="Perfumy" class="brand-instagram-logo">
+                    <div class="brand-instagram-info">
+                        <h3 class="brand-instagram-title">Perfumy</h3>
+                        <p class="brand-instagram-handle">@perfumy.ae</p>
+                        <a href="https://www.instagram.com/perfumy.ae/" target="_blank" class="brand-instagram-follow-btn">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
                                 <circle cx="8.5" cy="7" r="4"/>
                                 <line x1="20" y1="8" x2="20" y2="14"/>
                                 <line x1="23" y1="11" x2="17" y2="11"/>
                             </svg>
                             Follow
-                        </div>
-                    </div>
-                    <a href="https://www.instagram.com/perfumy.ae/" target="_blank" class="instagram-preview">
-                        <img src="https://luxuryoudh.com/wp-content/uploads/2024/10/perfume-1024x683.jpg" alt="Perfumy Instagram">
-                        <div class="instagram-preview-content">
-                            <svg class="instagram-icon" viewBox="0 0 24 24">
-                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="white" stroke-width="2"/>
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="white" stroke-width="2"/>
-                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="white" stroke-width="2"/>
-                            </svg>
-                            <div class="instagram-preview-text">View Latest Posts</div>
-                        </div>
-                    </a>
-                    <div class="instagram-card-footer">
-                        <div class="instagram-stats">
-                            <div class="instagram-stat">
-                                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-                                </svg>
-                                3.5K+
-                            </div>
-                            <div class="instagram-stat">
-                                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                                    <circle cx="8.5" cy="8.5" r="1.5"/>
-                                    <polyline points="21 15 16 10 5 21"/>
-                                </svg>
-                                180+
-                            </div>
-                        </div>
-                        <a href="https://www.instagram.com/perfumy.ae/" target="_blank" class="instagram-link">
-                            View Profile
-                            <svg viewBox="0 0 24 24">
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                                <polyline points="15 3 21 3 21 9"/>
-                                <line x1="10" y1="14" x2="21" y2="3"/>
-                            </svg>
                         </a>
                     </div>
+                </div>
+                <div class="brand-instagram-posts">
+                    <a href="https://www.instagram.com/perfumy.ae/" target="_blank" class="instagram-post">
+                        <div class="instagram-post-image" style="background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); display: flex; align-items: center; justify-content: center;">
+                            <svg viewBox="0 0 24 24" width="40" height="40" fill="white">
+                                <path d="M8 12h8"/>
+                                <path d="M12 16v4"/>
+                                <path d="M12 8V4"/>
+                                <path d="M16 10H8"/>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/perfumy.ae/" target="_blank" class="instagram-post">
+                        <img src="https://www.perfumy.ae/assets/images/product-image/KJ9zojeXN6.webp" alt="Perfume" class="instagram-post-img">
+                    </a>
+                    <a href="https://www.instagram.com/perfumy.ae/" target="_blank" class="instagram-post">
+                        <img src="https://www.perfumy.ae/assets/images/product-image/k4tniAOiW5.webp" alt="Perfume" class="instagram-post-img">
+                    </a>
+                    <a href="https://www.instagram.com/perfumy.ae/" target="_blank" class="instagram-post">
+                        <img src="https://www.perfumy.ae/assets/images/product-image/7YfemCaeLO.webp" alt="Perfume" class="instagram-post-img">
+                    </a>
+                    <a href="https://www.instagram.com/perfumy.ae/" target="_blank" class="instagram-post">
+                        <img src="https://www.perfumy.ae/assets/images/product-image/Ch5mt762oh.webp" alt="Perfume" class="instagram-post-img">
+                    </a>
+                </div>
+                <div class="brand-instagram-footer">
+                    <div class="brand-instagram-stats">
+                        <span class="stat-value">3.5K+</span>
+                        <span class="stat-label">Followers</span>
+                    </div>
+                    <a href="https://www.instagram.com/perfumy.ae/" target="_blank" class="brand-instagram-link">View All Posts →</a>
                 </div>
             </div>
         </div>
@@ -2581,8 +2614,8 @@
             <div class="footer-links">
                 <h4>Our Brands</h4>
                 <ul>
-                    <li><a href="https://thickfiber.ae/" target="_blank">Thick Fiber</a></li>
-                    <li><a href="https://luxuryoudh.com/" target="_blank">Luxury Oudh</a></li>
+                    <li><a href="https://www.thickfiber.ae/" target="_blank">Thick Fiber</a></li>
+                    <li><a href="https://www.luxuryoudh.com/" target="_blank">Luxury Oudh</a></li>
                     <li><a href="https://www.perfumy.ae/" target="_blank">Perfumy</a></li>
                 </ul>
             </div>
@@ -2600,7 +2633,7 @@
                 <ul>
                     <li><a href="https://www.instagram.com/luxury_oudh/" target="_blank">Instagram (@luxury_oudh)</a></li>
                     <li><a href="https://www.facebook.com/luxuryoudh1/" target="_blank">Facebook (Luxury Oudh)</a></li>
-                    <li><a href="https://twitter.com/LuxuryOudh" target="_blank">Twitter (@LuxuryOudh)</a></li>
+                    <li><a href="https://www.twitter.com/LuxuryOudh" target="_blank">Twitter (@LuxuryOudh)</a></li>
                     <li><a href="mailto:orders@theperfumy.ae" target="_blank">Email Us</a></li>
                 </ul>
             </div>
