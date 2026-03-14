@@ -1108,6 +1108,168 @@
             transform: translateY(-2px);
         }
 
+        /* Instagram Section */
+        .instagram-section {
+            background: var(--gray-50);
+        }
+
+        .instagram-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .instagram-card {
+            background: var(--white);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        .instagram-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        .instagram-header {
+            display: flex;
+            align-items: center;
+            padding: 20px 24px;
+            border-bottom: 1px solid var(--gray-100);
+            gap: 14px;
+        }
+
+        .instagram-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--gold);
+        }
+
+        .instagram-info {
+            flex: 1;
+        }
+
+        .instagram-username {
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--black);
+            margin-bottom: 2px;
+        }
+
+        .instagram-brand {
+            font-size: 0.8rem;
+            color: var(--gray-500);
+        }
+
+        .instagram-follow {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--gold);
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .instagram-follow svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .instagram-preview {
+            position: relative;
+            background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .instagram-preview img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.7;
+        }
+
+        .instagram-preview-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .instagram-icon {
+            width: 48px;
+            height: 48px;
+            fill: var(--white);
+            margin-bottom: 8px;
+        }
+
+        .instagram-preview-text {
+            font-size: 0.85rem;
+            font-weight: 500;
+            opacity: 0.95;
+        }
+
+        .instagram-card-footer {
+            padding: 20px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .instagram-stats {
+            display: flex;
+            gap: 20px;
+        }
+
+        .instagram-stat {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.85rem;
+            color: var(--gray-600);
+        }
+
+        .instagram-stat svg {
+            width: 18px;
+            height: 18px;
+            stroke: var(--gold);
+        }
+
+        .instagram-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 24px;
+            background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+            color: var(--white);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .instagram-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(220, 39, 67, 0.4);
+        }
+
+        .instagram-link svg {
+            width: 18px;
+            height: 18px;
+            fill: var(--white);
+        }
+
         /* Footer */
         footer {
             background: var(--black);
@@ -1314,6 +1476,9 @@
             .brand-logos-strip {
                 display: none;
             }
+            .instagram-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
 
         @media (max-width: 768px) {
@@ -1511,6 +1676,36 @@
             .section-label {
                 font-size: 0.7rem;
                 margin-bottom: 16px;
+            }
+            .instagram-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            .instagram-header {
+                padding: 16px 20px;
+            }
+            .instagram-avatar {
+                width: 40px;
+                height: 40px;
+            }
+            .instagram-username {
+                font-size: 0.9rem;
+            }
+            .instagram-brand {
+                font-size: 0.75rem;
+            }
+            .instagram-card-footer {
+                padding: 16px 20px;
+            }
+            .instagram-stats {
+                gap: 16px;
+            }
+            .instagram-stat {
+                font-size: 0.8rem;
+            }
+            .instagram-link {
+                padding: 8px 20px;
+                font-size: 0.8rem;
             }
         }
 
@@ -1931,6 +2126,189 @@
                             <h4 class="product-name">Italian Breez</h4>
                             <p class="product-category">Unisex</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section class="instagram-section">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-label">Follow Us</div>
+                <h2 class="section-title">Connect on Instagram</h2>
+                <p class="section-description">Stay updated with our latest products, offers, and behind-the-scenes content.</p>
+            </div>
+            <div class="instagram-grid">
+                <!-- Thick Fiber Instagram -->
+                <div class="instagram-card">
+                    <div class="instagram-header">
+                        <img src="https://thickfiber.ae/wp-content/uploads/2020/03/favico.png" alt="Thick Fiber" class="instagram-avatar" style="object-fit: contain; padding: 8px; background: #1a1a2e;">
+                        <div class="instagram-info">
+                            <div class="instagram-username">@thick.fiber</div>
+                            <div class="instagram-brand">Thick Fiber</div>
+                        </div>
+                        <div class="instagram-follow">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="8.5" cy="7" r="4"/>
+                                <line x1="20" y1="8" x2="20" y2="14"/>
+                                <line x1="23" y1="11" x2="17" y2="11"/>
+                            </svg>
+                            Follow
+                        </div>
+                    </div>
+                    <a href="https://www.instagram.com/thick.fiber/" target="_blank" class="instagram-preview">
+                        <img src="https://thickfiber.ae/wp-content/uploads/2020/03/favico.png" alt="Thick Fiber Instagram" style="opacity: 0.2; object-fit: contain; background: #1a1a2e;">
+                        <div class="instagram-preview-content">
+                            <svg class="instagram-icon" viewBox="0 0 24 24">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="white" stroke-width="2"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="white" stroke-width="2"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="white" stroke-width="2"/>
+                            </svg>
+                            <div class="instagram-preview-text">View Latest Posts</div>
+                        </div>
+                    </a>
+                    <div class="instagram-card-footer">
+                        <div class="instagram-stats">
+                            <div class="instagram-stat">
+                                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                </svg>
+                                2.5K+
+                            </div>
+                            <div class="instagram-stat">
+                                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                    <circle cx="8.5" cy="8.5" r="1.5"/>
+                                    <polyline points="21 15 16 10 5 21"/>
+                                </svg>
+                                150+
+                            </div>
+                        </div>
+                        <a href="https://www.instagram.com/thick.fiber/" target="_blank" class="instagram-link">
+                            View Profile
+                            <svg viewBox="0 0 24 24">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                <polyline points="15 3 21 3 21 9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Luxury Oudh Instagram -->
+                <div class="instagram-card">
+                    <div class="instagram-header">
+                        <img src="https://luxuryoudh.com/wp-content/uploads/2024/10/luxury-oud-logo-1_edited_edited.png" alt="Luxury Oudh" class="instagram-avatar" style="object-fit: contain; padding: 8px; background: #1a1a2e;">
+                        <div class="instagram-info">
+                            <div class="instagram-username">@luxury_oudh</div>
+                            <div class="instagram-brand">Luxury Oudh</div>
+                        </div>
+                        <div class="instagram-follow">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="8.5" cy="7" r="4"/>
+                                <line x1="20" y1="8" x2="20" y2="14"/>
+                                <line x1="23" y1="11" x2="17" y2="11"/>
+                            </svg>
+                            Follow
+                        </div>
+                    </div>
+                    <a href="https://www.instagram.com/luxury_oudh/" target="_blank" class="instagram-preview">
+                        <img src="https://luxuryoudh.com/wp-content/uploads/2024/10/oudh-1024x683.jpg" alt="Luxury Oudh Instagram">
+                        <div class="instagram-preview-content">
+                            <svg class="instagram-icon" viewBox="0 0 24 24">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="white" stroke-width="2"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="white" stroke-width="2"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="white" stroke-width="2"/>
+                            </svg>
+                            <div class="instagram-preview-text">View Latest Posts</div>
+                        </div>
+                    </a>
+                    <div class="instagram-card-footer">
+                        <div class="instagram-stats">
+                            <div class="instagram-stat">
+                                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                </svg>
+                                5K+
+                            </div>
+                            <div class="instagram-stat">
+                                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                    <circle cx="8.5" cy="8.5" r="1.5"/>
+                                    <polyline points="21 15 16 10 5 21"/>
+                                </svg>
+                                200+
+                            </div>
+                        </div>
+                        <a href="https://www.instagram.com/luxury_oudh/" target="_blank" class="instagram-link">
+                            View Profile
+                            <svg viewBox="0 0 24 24">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                <polyline points="15 3 21 3 21 9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Perfumy Instagram -->
+                <div class="instagram-card">
+                    <div class="instagram-header">
+                        <img src="https://www.perfumy.ae/images/LOGO-THICK-STROKE-01.png" alt="Perfumy" class="instagram-avatar" style="object-fit: contain; padding: 8px; background: #1a1a2e;">
+                        <div class="instagram-info">
+                            <div class="instagram-username">@perfumy.ae</div>
+                            <div class="instagram-brand">Perfumy</div>
+                        </div>
+                        <div class="instagram-follow">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="8.5" cy="7" r="4"/>
+                                <line x1="20" y1="8" x2="20" y2="14"/>
+                                <line x1="23" y1="11" x2="17" y2="11"/>
+                            </svg>
+                            Follow
+                        </div>
+                    </div>
+                    <a href="https://www.instagram.com/perfumy.ae/" target="_blank" class="instagram-preview">
+                        <img src="https://luxuryoudh.com/wp-content/uploads/2024/10/perfume-1024x683.jpg" alt="Perfumy Instagram">
+                        <div class="instagram-preview-content">
+                            <svg class="instagram-icon" viewBox="0 0 24 24">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="white" stroke-width="2"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="white" stroke-width="2"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="white" stroke-width="2"/>
+                            </svg>
+                            <div class="instagram-preview-text">View Latest Posts</div>
+                        </div>
+                    </a>
+                    <div class="instagram-card-footer">
+                        <div class="instagram-stats">
+                            <div class="instagram-stat">
+                                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                </svg>
+                                3.5K+
+                            </div>
+                            <div class="instagram-stat">
+                                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                    <circle cx="8.5" cy="8.5" r="1.5"/>
+                                    <polyline points="21 15 16 10 5 21"/>
+                                </svg>
+                                180+
+                            </div>
+                        </div>
+                        <a href="https://www.instagram.com/perfumy.ae/" target="_blank" class="instagram-link">
+                            View Profile
+                            <svg viewBox="0 0 24 24">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                <polyline points="15 3 21 3 21 9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
